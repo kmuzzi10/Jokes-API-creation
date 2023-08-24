@@ -1,0 +1,1 @@
+This is the jokes api which have 100 jokes and this is documentation you can open this via postman
