@@ -8,12 +8,12 @@ const masterKey = "4VGP2DN-6EWM4SJ-N6FGRHV-Z3PR3TT";
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
-//1. GET a random joke
+//1. GET a random joke from server
 app.get("/random",(req,res)=>{
   const randomIndex = Math.floor(Math.random()*jokes.length);
   res.json(jokes[randomIndex])
 })
-//2. GET a specific joke
+//2. GET a specific joke from server
 app.get("/jokes/:id",(req,res)=>{
   const id = parseInt(req.params.id);
   const jokeId = jokes.find((joke)=>joke.id==id)
