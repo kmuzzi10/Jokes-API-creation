@@ -19,7 +19,7 @@ app.get("/jokes/:id",(req,res)=>{
   const jokeId = jokes.find((joke)=>joke.id==id)
   res.json(jokeId);
 })
-//3. GET a jokes by filtering on the joke type
+//3. GET a jokes by filtering on the joke type from server
 app.get("/filter",(req,res)=>{
   const type = req.query.type;
   const ans = jokes.filter((joke)=>joke.jokeType==type);
