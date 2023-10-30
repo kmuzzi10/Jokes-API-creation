@@ -26,7 +26,7 @@ app.get("/filter",(req,res)=>{
   res.json(ans);
 
 })
-//4. POST a new joke
+//4. POST a new joke through  server
 app.post("/jokes", (req, res) => {
   const newJoke = {
     id: jokes.length + 1,
