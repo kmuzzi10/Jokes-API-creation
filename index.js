@@ -37,7 +37,7 @@ app.post("/jokes", (req, res) => {
   console.log(jokes.slice(-1));
   res.json(newJoke);
 });
-//5. PUT a joke
+//5. PUT a joke through server
 app.put("/jokes/:id",(req,res)=>{
   const id = parseInt(req.params.id);
   const replace ={
